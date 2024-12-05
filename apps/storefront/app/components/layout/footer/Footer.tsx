@@ -110,12 +110,7 @@ export const Footer = () => {
               />
             </div>
 
-            <a
-              href="https://market.haus"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col items-start gap-1 text-sm"
-            >
+            <a>
               © {new Date().getFullYear()} All rights reserved.
             </a>
           </div>

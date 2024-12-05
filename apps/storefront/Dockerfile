@@ -6,6 +6,8 @@ WORKDIR /app
 
 COPY  . .
 
+RUN corepack enable && corepack prepare yarn@4.5.1 --activate
+
 # RUN wget -q -O medusa-config.js "https://raw.githubusercontent.com/chillpilllike/file/refs/heads/main/barrio.js
 
 

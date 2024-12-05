@@ -142,10 +142,10 @@ export default function IndexRoute() {
           <Image src="/assets/images/supplements_pills.png" alt="Barrio background" height={520} width={420} />
         </div>
 
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-jost md:ml-0 md:mr-[288px] lg:mr-[392px]">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-Edu+AU+VIC+WA+NT+Arrows md:ml-0 md:mr-[288px] lg:mr-[392px]">
           <span className="whitespace-nowrap">Top-Quality</span>
           <br />
-          <span className="font-jost text-[200%] whitespace-nowrap inline-block mt-6 mb-4 sm:mt-2 sm:-mb-4">
+          <span className="font-Edu+AU+VIC+WA+NT+Arrows text-[200%] whitespace-nowrap inline-block mt-6 mb-4 sm:mt-2 sm:-mb-4">
             Supplements
           </span>
           <br />

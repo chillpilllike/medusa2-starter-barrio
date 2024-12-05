@@ -80,9 +80,9 @@ export default function IndexRoute() {
           className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
           content={
             <div className="text-center w-full space-y-9">
-              <h4 className="text-lg md:text-2xl font-italiana tracking-wider">REFUND POLICY</h4>
+              <h4 className="text-lg md:text-2xl font-italiana tracking-wider"> </h4>
               <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-                Our Story
+                REFUND POLICY
               </h1>
               <p className="mx-auto text-md md:text-2xl !leading-normal">
                 At Barrio Coffee Roastery, we’re more than just a coffee business—we’re a community. Inspired by the
@@ -112,9 +112,9 @@ export default function IndexRoute() {
           className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
           content={
             <div className="text-center w-full space-y-9">
-              <h4 className="text-lg md:text-2xl font-jost tracking-wider">2.</h4>
+              <h4 className="text-lg md:text-2xl font-jost tracking-wider">Eligibility for Returns</h4>
               <h1 className="text-4xl md:text-8xl font-jost tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-                Eligibility for Returns
+                
               </h1>
               <p className="mx-auto text-md md:text-2xl !leading-normal">
                 To qualify for a return, please make sure that:<br />
@@ -134,9 +134,9 @@ export default function IndexRoute() {
           className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
           content={
             <div className="text-center w-full space-y-9">
-              <h4 className="text-lg md:text-2xl font-jost tracking-wider">3.</h4>
+              <h4 className="text-lg md:text-2xl font-jost tracking-wider">Products that Cannot be Returned</h4>
               <h1 className="text-4xl md:text-8xl font-jost tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-                Products that Cannot be Returned
+                
               </h1>
               <p className="mx-auto text-md md:text-2xl !leading-normal">
                 Some items are not eligible for returns, including:<br />
@@ -156,9 +156,9 @@ export default function IndexRoute() {
     className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
-        <h4 className="text-lg md:text-2xl font-jost tracking-wider">4.</h4>
+        <h4 className="text-lg md:text-2xl font-jost tracking-wider">Initiating a Return</h4>
         <h1 className="text-4xl md:text-8xl font-jost tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-          Initiating a Return
+          
         </h1>
         <p className="mx-auto text-md md:text-2xl !leading-normal">
           <strong>Contact Us:</strong> Before sending the product back to us, please contact us:<br />
@@ -176,9 +176,9 @@ export default function IndexRoute() {
     className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
-        <h4 className="text-lg md:text-2xl font-italiana tracking-wider">5.</h4>
+        <h4 className="text-lg md:text-2xl font-italiana tracking-wider">Processing Your Return</h4>
         <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-          Processing Your Return
+          
         </h1>
         <p className="mx-auto text-md md:text-2xl !leading-normal">
           Upon receiving the product, we will inspect it and notify you that we have received your returned item.<br />
@@ -198,9 +198,9 @@ export default function IndexRoute() {
     className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
-        <h4 className="text-lg md:text-2xl font-italiana tracking-wider">6.</h4>
+        <h4 className="text-lg md:text-2xl font-italiana tracking-wider">Exchanges (if applicable)</h4>
         <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-          Exchanges (if applicable)
+          
         </h1>
         <p className="mx-auto text-md md:text-2xl !leading-normal">
           If your product is defective or damaged and you need to exchange it for the same item, then contact us.<br />
@@ -216,9 +216,9 @@ export default function IndexRoute() {
     className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
-        <h4 className="text-lg md:text-2xl font-inter tracking-wider">7.</h4>
+        <h4 className="text-lg md:text-2xl font-inter tracking-wider">Contact Us</h4>
         <h1 className="text-4xl md:text-8xl font-inter tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-          Contact Us
+           
         </h1>
         <p className="mx-auto text-md md:text-2xl !leading-normal">
           If you have any questions about our Refund Policy, please contact us:<br />

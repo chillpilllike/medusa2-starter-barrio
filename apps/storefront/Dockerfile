@@ -16,7 +16,7 @@ RUN yarn add @vanilla-extract/css
 # Ensure dependencies are installed
 RUN yarn install
 
-RUN npm install turbo@2.1.2 --save-dev --force
+RUN yarn install turbo@2.1.2 --save-dev --force
 ENV TURBO_TELEMETRY=0
 
 # Run Turborepo prune command

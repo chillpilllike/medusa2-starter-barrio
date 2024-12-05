@@ -8,6 +8,8 @@ FROM base AS builder
 
 COPY . .
 
+RUN corepack enable && corepack prepare yarn@4.5.1 --activate
+
 # Ensure dependencies are installed
 RUN yarn install
 

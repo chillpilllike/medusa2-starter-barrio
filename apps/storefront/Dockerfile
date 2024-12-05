@@ -16,6 +16,9 @@ RUN yarn add @vanilla-extract/css
 # Ensure dependencies are installed
 RUN yarn install
 
+RUN npm install turbo@2.1.2 --save-dev
+ENV TURBO_TELEMETRY=0
+
 # Run Turborepo prune command
 RUN npx --yes turbo@2.1.2 prune --scope=storefront --docker
 

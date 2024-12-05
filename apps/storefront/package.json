@@ -15,6 +15,9 @@
     "node": ">=20"
   },
   "sideEffects": false,
+  "resolutions": {
+    "vanilla-extract": "^2.3.0"
+  },
   "scripts": {
     "build": "vite build && vite build --ssr",
     "dev": "vite dev",
@@ -120,10 +123,6 @@
     "react-photo-album": "^2.3.0",
     "react-player": "^2.12.0",
     "remix": "2.12.0",
-    "remix-utils": "7.6.0",
-    "remix-validated-form": "^5.2.0",
-    "set-cookie-parser": "^2.4.0",
-    "swr": "^2.2.0",
-    "vanilla-extract": "^2.4.0"
+    "remix-utils": "7.6.0"
   }
 }

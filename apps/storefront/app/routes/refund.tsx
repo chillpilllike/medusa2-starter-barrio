@@ -240,15 +240,6 @@ export default function IndexRoute() {
           ]}
   />
 </Container>
-
-      <Container className="pt-4 flex flex-col gap-16 py-0 sm:!px-16 pb-44">
-        <div className="font-italiana text-4xl break-words md:text-6xl lg:text-7xl">
-          Find your people, find your <span className="font-ballet text-[150%] leading-tight">Barrio</span>
-        </div>
-        {locations.map((location) => (
-          <Location {...location} />
-        ))}
-      </Container>
     </>
   );
 }

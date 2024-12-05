@@ -77,7 +77,7 @@ export default function IndexRoute() {
     <>
        <Container className="!px-0 py-0 sm:!p-16">
         <Hero
-          className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+          className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
           content={
             <div className="text-center w-full space-y-9">
               <h4 className="text-lg md:text-2xl font-italiana tracking-wider"> </h4>
@@ -109,7 +109,7 @@ export default function IndexRoute() {
 
        <Container className="!px-0 py-0 sm:!p-16">
         <Hero
-          className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+          className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
           content={
             <div className="text-center w-full space-y-9">
               <h4 className="text-lg md:text-2xl font-jost tracking-wider">Eligibility for Returns</h4>
@@ -131,7 +131,7 @@ export default function IndexRoute() {
 
         <Container className="!px-0 py-0 sm:!p-16">
         <Hero
-          className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+          className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
           content={
             <div className="text-center w-full space-y-9">
               <h4 className="text-lg md:text-2xl font-jost tracking-wider">Products that Cannot be Returned</h4>
@@ -153,7 +153,7 @@ export default function IndexRoute() {
 
       <Container className="!px-0 py-0 sm:!p-16">
   <Hero
-    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
         <h4 className="text-lg md:text-2xl font-jost tracking-wider">Initiating a Return</h4>
@@ -173,7 +173,7 @@ export default function IndexRoute() {
 
       <Container className="!px-0 py-0 sm:!p-16">
   <Hero
-    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
         <h4 className="text-lg md:text-2xl font-italiana tracking-wider">Processing Your Return</h4>
@@ -195,7 +195,7 @@ export default function IndexRoute() {
 
       <Container className="!px-0 py-0 sm:!p-16">
   <Hero
-    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
         <h4 className="text-lg md:text-2xl font-italiana tracking-wider">Exchanges (if applicable)</h4>
@@ -213,7 +213,7 @@ export default function IndexRoute() {
 
       <Container className="!px-0 py-0 sm:!p-16">
   <Hero
-    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
         <h4 className="text-lg md:text-2xl font-inter tracking-wider">Contact Us</h4>

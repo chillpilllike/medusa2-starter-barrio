@@ -41,67 +41,39 @@ export default function IndexRoute() {
         }}
       />
 
-      <Container className="p-14 md:pt-1 lg:pt-24 relative flex flex-col-reverse items-center lg:flex-row">
-        <div className="md:absolute w-80 md:left-4 md:-top-[240px] lg:left-20 lg:w-[420px]">
-          <Image src="/assets/images/header-image-1.png" alt="Barrio background" height={520} width={420} />
-        </div>
-
-        <div className="md:w-full flex flex-col justify-center max-md:items-center">
-          <div className="w-full flex text-center md:text-left">
-            <h2 className="mx-auto md:ml-[32%] lg:ml-[37%] xl:ml-[30%] lg:mr-auto text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-ballet mt-12">
-              Building Community
-            </h2>
-          </div>
-          <p className="font-italiana text-6xl lg:text-7xl xl:text-8xl mt-6 lg:mt-8 xl:mt-10 max-sm:text-center">
-            one cup at a time
-          </p>
-        </div>
-      </Container>
-
-      <Container className="p-14 pt-0">
-        <Hero
-          className="h-[594px]"
-          backgroundClassName="rounded-3xl"
-          image={{
-            url: '/assets/images/banner-coffee-shop.png',
-            alt: 'Barrio background',
-          }}
-        />
-      </Container>
-
       <ListItems
         itemsClassName="mb-2"
-        title="About our products"
+        title="About our commitments"
         items={[
           {
-            title: 'Responsibly Sourced',
+            title: 'Check Order Status',
             description:
-              'We believe good coffee happens when great people come together to build longterm relationships.',
+              'Stay informed every step of the way with real-time updates on your order status.',
             image: {
               src: '/assets/images/benefit-1.png',
-              alt: 'Responsibly Sourced',
+              alt: 'Check Order Status',
               width: 60,
               height: 60,
             },
           },
           {
-            title: 'Meticulously Roasted',
+            title: '30 Days Return',
             description:
-              'Our custom roast profiles are designed to elevate the natural beauty of our coffees - from sparkling acidity to brown sugar sweetness.',
+              'Enjoy peace of mind with our 30-day return policy. If you’re not completely satisfied with your purchase, return it within 30 days for a full refund.',
             image: {
               src: '/assets/images/benefit-2.png',
-              alt: 'Meticulously Roasted',
+              alt: '30 Days return',
               width: 60,
               height: 60,
             },
           },
           {
-            title: 'Giving Back',
+            title: '100% Money Back Guarantee',
             description:
-              'Every time you buy a bag of our coffee, we donate a portion of our proceeds to our non-profit partners.',
+              'Shop with confidence! If you’re not completely satisfied with your purchase, we offer a 100% money-back guarantee.',
             image: {
               src: '/assets/images/benefit-3.png',
-              alt: 'Giving Back',
+              alt: 'Money Back',
               width: 60,
               height: 60,
             },

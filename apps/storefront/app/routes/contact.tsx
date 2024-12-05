@@ -77,7 +77,7 @@ export default function IndexRoute() {
     <>
       <Container className="!px-0 py-0 sm:!p-16">
   <Hero
-    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
     content={
       <div className="text-center w-full space-y-9">
         <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
@@ -94,7 +94,7 @@ export default function IndexRoute() {
           <div>
             <h2 className="text-2xl font-bold">Email</h2>
             <p className="text-md md:text-xl leading-relaxed">
-              You can email us at <a href="mailto:support@secretgreen.com.au" className="text-blue-500 underline">support@secretgreen.com.au</a>
+              You can email us at <a href="mailto:support@lifefuel.com.au" className="text-blue-500 underline">support@lifefuel.com.au</a>
             </p>
           </div>
 

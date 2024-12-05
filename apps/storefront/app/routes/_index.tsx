@@ -186,6 +186,18 @@ export default function IndexRoute() {
           </p>
         }
       />
+
+      <ProductList
+        className="!pb-[100px]"
+        heading="Our Collections"
+        actions={[
+          {
+            label: 'View all',
+            url: '/products',
+          },
+        ]}
+      />
+      
       <GridCTA
         className="p-14 md:pt-28 lg:pt-24 lg:px-24"
         images={[

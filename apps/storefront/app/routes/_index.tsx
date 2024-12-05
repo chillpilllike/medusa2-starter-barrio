@@ -36,7 +36,7 @@ export default function IndexRoute() {
           },
         ]}
         image={{
-          url: '/assets/images/nz_banner_2 copy.png',
+          url: '/assets/images/nz_banner_2copy.png',
           alt: 'Hero background',
         }}
       />

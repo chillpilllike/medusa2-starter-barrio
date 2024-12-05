@@ -98,7 +98,7 @@ export default function IndexRoute() {
           <div className="text-center w-full space-y-9 pt-9">
             <h4 className="font-jost text-2xl">Order & Relax!</h4>
             <h1 className="text-4xl lg:text-7xl font-jost">
-              Sit back, let us take care&nbsp;of&nbsp;your&nbsp;coffee
+              Sit back, let us take care&nbsp;of&nbsp;your&nbsp;health
             </h1>
 
             <ListItems

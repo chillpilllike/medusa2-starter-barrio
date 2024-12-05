@@ -85,36 +85,24 @@ export default function IndexRoute() {
                 Our Story
               </h1>
               <p className="mx-auto text-md md:text-2xl !leading-normal">
-                At Barrio Coffee Roastery, we’re more than just a coffee business—we’re a community. Inspired by the
-                essence of a "barrio," a close-knit neighborhood where people gather, share, and connect, we aim to
-                bring that sense of belonging and warmth to every cup of coffee we roast. From the moment we started,
-                our passion has been to create exceptional coffee that{' '}
-                <span className="font-bold">brings people together, one sip at a time.</span>
+                At EcoSupps Australia, we’re more than just a supplements store—we’re a community. Inspired by the diverse Australian lifestyle and our shared commitment to health and wellness, we aim to bring people together through trusted, high-quality products. Our journey began with a simple goal: to offer a curated range of supplements from leading brands that support every step of your health and fitness journey. Whether you’re looking to enhance performance, boost wellness, or achieve your fitness goals, EcoSupps Australia is here to fuel your potential, every step of the way.
               </p>
             </div>
           }
           actionsClassName="!flex-row w-full justify-center !font-base"
           actions={[
             {
-              label: 'Shop Our Coffee',
-              url: '/products',
+              label: 'Contact us',
+              url: '/contact',
             },
             {
-              label: 'Join the Barrio Community',
-              url: '#',
+              label: 'Browse Products',
+              url: '/products',
             },
           ]}
         />
       </Container>
 
-      <Container className="pt-4 flex flex-col gap-16 py-0 sm:!px-16 pb-44">
-        <div className="font-italiana text-4xl break-words md:text-6xl lg:text-7xl">
-          Find your people, find your <span className="font-ballet text-[150%] leading-tight">Barrio</span>
-        </div>
-        {locations.map((location) => (
-          <Location {...location} />
-        ))}
-      </Container>
     </>
   );
 }

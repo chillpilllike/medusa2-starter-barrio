@@ -60,7 +60,7 @@ export const getRootLoader = async ({ request }: LoaderFunctionArgs) => {
       region,
       siteDetails: {
         store: {
-          name: 'LifeFuel',
+          name: 'Secretgreen',
         },
         settings: siteSettings,
         headerNavigationItems,

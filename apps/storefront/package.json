@@ -1,23 +1,15 @@
 {
   "name": "storefront",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Starter Storefront",
   "author": "Lambda Curry <team@lambdacurry.dev>",
   "license": "UNLICENSED",
   "private": true,
-  "packageManager": "yarn@4.5.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "type": "module",
   "engines": {
     "node": ">=20"
   },
   "sideEffects": false,
-  "resolutions": {
-    "vanilla-extract": "^2.3.0"
-  },
   "scripts": {
     "build": "vite build && vite build --ssr",
     "dev": "vite dev",
@@ -77,7 +69,6 @@
     "ts-jest": "28.0.8",
     "ts-node": "10.9.1",
     "tslib": "^2.0.0",
-    "turbo": "^2.1.2",
     "typescript": "^5.6.2",
     "vite": "^5.2.7",
     "vite-tsconfig-paths": "^4.2.1"
@@ -123,6 +114,13 @@
     "react-photo-album": "^2.3.0",
     "react-player": "^2.12.0",
     "remix": "2.12.0",
-    "remix-utils": "7.6.0"
+    "remix-utils": "7.6.0",
+    "remix-validated-form": "^5.1.5",
+    "stripe": "^9.12.0",
+    "tailwindcss": "3.3.5",
+    "use-debounce": "^8.0.1",
+    "yet-another-react-lightbox": "^3.14.0",
+    "yup": "^1.4.0",
+    "zustand": "^4.4.7"
   }
 }

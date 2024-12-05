@@ -3,14 +3,6 @@ import { NavigationCollection, NavigationItemLocation } from '@libs/types';
 export const headerNavigationItems: NavigationCollection = [
   {
     id: 1,
-    label: 'Categories',
-    url: '/categories',
-    sort_order: 0,
-    location: NavigationItemLocation.header,
-    new_tab: false,
-  },
-  {
-    id: 2,
     label: 'About us',
     url: '/about-us',
     sort_order: 1,
@@ -18,15 +10,15 @@ export const headerNavigationItems: NavigationCollection = [
     new_tab: false,
   },
   {
-    id: 3,
-    label: 'Shop All',
+    id: 2,
+    label: 'Collections',
     url: '/products',
     sort_order: 1,
     location: NavigationItemLocation.header,
     new_tab: false,
   },
   {
-    id: 4,
+    id: 3,
     label: 'Contact us',
     url: '/contact',
     sort_order: 1,

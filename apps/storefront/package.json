@@ -5,6 +5,7 @@
   "author": "Lambda Curry <team@lambdacurry.dev>",
   "license": "UNLICENSED",
   "private": true,
+  "packageManager": "yarn@3.6.1", // Or npm, pnpm based on your setup
   "type": "module",
   "engines": {
     "node": ">=20"

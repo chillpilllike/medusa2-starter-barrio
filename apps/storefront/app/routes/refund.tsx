@@ -112,8 +112,8 @@ export default function IndexRoute() {
           className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
           content={
             <div className="text-center w-full space-y-9">
-              <h4 className="text-lg md:text-2xl font-italiana tracking-wider">2.</h4>
-              <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
+              <h4 className="text-lg md:text-2xl font-jost tracking-wider">2.</h4>
+              <h1 className="text-4xl md:text-8xl font-jost tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
                 Eligibility for Returns
               </h1>
               <p className="mx-auto text-md md:text-2xl !leading-normal">

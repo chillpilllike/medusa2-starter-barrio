@@ -19,8 +19,8 @@ import '@app/styles/global.css';
 import { useRootLoaderData } from './hooks/useRootLoaderData';
 
 export const getRootMeta: MetaFunction = ({ data }) => {
-  const title = 'Barrio Store';
-  const description = 'Discover our artisan-roasted coffee, crafted with care and delivered to your door.';
+  const title = 'LifeFuel Australia | Top Supplement Brands Online';
+  const description = 'Discover Australia’s best online supplement store featuring top brands. Shop vitamins, proteins, and wellness products for all your health and fitness needs!';
   const ogTitle = title;
   const ogDescription = description;
   const ogImage = '';

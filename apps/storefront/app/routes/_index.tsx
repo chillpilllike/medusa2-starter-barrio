@@ -107,19 +107,19 @@ export default function IndexRoute() {
               useFillTitle
               items={[
                 {
-                  title: 'Choose your coffee',
+                  title: 'Place Your Order',
                   description:
-                    'From single origin to our house blend, or even surprise offerings for the more adventurous, we have the coffee tofit your taste.',
+                    'Simply choose your items and place your order securely online.',
                 },
                 {
-                  title: 'Choose a frequency',
+                  title: 'Dispatch & Track',
                   description:
-                    'Receive 12 oz of our whole bean coffee weekly, every 2 weeks, every 3 weeks, or monthly—whatever frequency meets your needs.',
+                    'Your order is dispatched and you can easily track its journey in real-time.',
                 },
                 {
-                  title: 'enjoy :)',
+                  title: 'Delivered to Your Door, enjoy :)',
                   description:
-                    'You’ve chosen your coffee and how often you want it delivered—all that’s left to do is sit back and relax while we do all the work.',
+                    'Enjoy fast, reliable delivery right to your doorstep.',
                 },
               ]}
             />
@@ -127,13 +127,13 @@ export default function IndexRoute() {
         }
         actions={[
           {
-            label: 'Get your coffee',
+            label: 'Place your first order',
             url: '/products',
           },
         ]}
         image={{
           url: '/assets/images/barrio-banner.png',
-          alt: 'Barrio background',
+          alt: 'Supplements background',
         }}
       />
 

@@ -191,11 +191,11 @@ export default function IndexRoute() {
         images={[
           {
             src: '/assets/images/grid-cta-1.png',
-            alt: 'Barrio background',
+            alt: 'Store background',
           },
           {
-            src: '/assets/images/grid-cta-2.png',
-            alt: 'Barrio background',
+            src: '/assets/images/pills_plate.jpg',
+            alt: 'Supplements background',
           },
         ]}
         content={

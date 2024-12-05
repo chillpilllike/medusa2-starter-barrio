@@ -94,7 +94,7 @@ export default function IndexRoute() {
           <div>
             <h2 className="text-2xl font-bold">Email</h2>
             <p className="text-md md:text-xl leading-relaxed">
-              You can email us at <a href="mailto:support@lifefuel.com.au" className="text-blue-500 underline">support@lifefuel.com.au</a>
+              You can email us at <a href="mailto:support@secretgreen.com.au" className="text-blue-500 underline">support@secretgreen.com.au</a>
             </p>
           </div>
 

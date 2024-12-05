@@ -46,11 +46,12 @@ export const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-6 w-full flex-col items-center gap-8 sm:flex-row sm:items-start sm:gap-16">
           <div className="flex w-full flex-col items-center gap-8 sm:w-auto sm:items-start sm:gap-9 sm:col-span-2 lg:col-span-3">
             <div className="flex flex-col gap-5">
-              <h4 className="font-bold">Coffee & Community</h4>
+              <h4 className="font-bold">Supplements for a Healthier You</h4>
               <p className="text-sm">
-                Barrio Coffee is a specialty coffee roaster and cafe located in East Austin. We offer freshly roasted
-                beans with an experienced balance of quality flavors. Come enjoy our custom house-blends and our
-                assortment of single origin coffees.
+                Our store offers a variety of top-quality supplements to support your fitness, health, and wellness.
+                From vitamins and minerals to protein powders and more, we have everything you need to achieve your goals.   
+                Our products are carefully sourced to deliver the best results, helping you feel your best every day.   
+                Whether you’re building strength, boosting immunity, or improving overall wellness, our supplements are here to help you thrive.
               </p>
             </div>
             <LogoStoreName />
@@ -108,7 +109,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-col items-start gap-1 text-sm"
             >
-              © {new Date().getFullYear()} Made with ❤️ by LambdaCurry
+              © {new Date().getFullYear()} Made with ❤️ by market.haus
             </a>
           </div>
           <div className="mt-1 flex flex-col justify-end text-xs sm:mt-0">

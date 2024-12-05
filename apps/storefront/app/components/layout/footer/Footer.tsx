@@ -81,11 +81,18 @@ export const Footer = () => {
             <SocialIcons siteSettings={settings} />
 
             <div className="flex flex-col gap-4 mt-4">
-              <h5> </h5>
+              <h5> ABN 28 069 966 859 </h5>
               <p className="text-sm">
-                ABN 28 069 966 859
+                
                 <br />
+              <a
+              href="https://market.haus"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-start gap-1 text-sm"
+              >
                 Made with ❤️ by market.haus
+  </a>
               </p>
             </div>
           </div>

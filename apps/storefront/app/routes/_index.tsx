@@ -142,14 +142,14 @@ export default function IndexRoute() {
           <Image src="/assets/images/supplements_pills.png" alt="Barrio background" height={520} width={420} />
         </div>
 
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-Edu+AU+VIC+WA+NT+Arrows md:ml-0 md:mr-[288px] lg:mr-[392px]">
-          <span className="whitespace-nowrap">Top-Quality</span>
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-italiana md:ml-0 md:mr-[288px] lg:mr-[392px]">
+          <span className="whitespace-nowrap">Discover</span>
           <br />
-          <span className="font-Edu+AU+VIC+WA+NT+Arrows text-[200%] whitespace-nowrap inline-block mt-6 mb-4 sm:mt-2 sm:-mb-4">
-            Supplements
+          <span className="font-italiana text-[200%] whitespace-nowrap inline-block mt-6 mb-4 sm:mt-2 sm:-mb-4">
+            Premium Products
           </span>
           <br />
-          <span className="whitespace-nowrap">for Your Health & Wellness Journey</span>
+          <span className="whitespace-nowrap">for Every Lifestyle</span>
         </h2>
       </Container>
 
@@ -160,29 +160,23 @@ export default function IndexRoute() {
             <div
               className="bg-cover bg-no-repeat bg-center w-full rounded-3xl h-[410px]"
               style={{
-                backgroundImage: 'url(/assets/images/supplements_bg.png)',
+                backgroundImage: 'url(/assets/images/secretgreen_1.png)',
               }}
             />
           </div>
         }
         right={
           <p className="text-sm h-full flex items-center justify-center">
-            We are dedicated to supplying the finest supplements to support your health and wellness goals. 
-            We partner with trusted, reputable manufacturers to bring you a curated selection of products designed to boost your vitality, 
-            energy, and overall well-being.
+            Welcome to your go-to destination for a diverse selection of top-quality products from trusted brands. We are dedicated to offering a curated collection of items designed to meet your needs, whether you’re looking to enhance your lifestyle, improve your wellness, or simply find everyday essentials.
             <br />
             <br />
-            Our extensive range of high-quality supplements includes everything from essential vitamins and minerals to protein powders, 
-            fitness supplements, and natural remedies. Each product we offer is carefully sourced from manufacturers who share our commitment
-            to quality and integrity, ensuring you receive the best results.
+            Our extensive range includes everything from health and wellness products to fashion, home goods, and fitness essentials. Each item is thoughtfully sourced from reputable brands that prioritize quality, ensuring you get the best in performance, durability, and style..
             <br />
             <br />
-            We pride ourselves on providing only the most effective supplements, backed by rigorous testing and adherence to industry standards.
-            Whether you’re a fitness enthusiast, focused on immunity, or seeking general wellness support, our products are designed to complement 
-            your lifestyle and help you achieve your goals.
+            We pride ourselves on delivering only the highest-quality products, rigorously tested and selected to meet industry standards. Whether you’re shopping for self-care, home improvement, or the latest trends, our store is here to help you find exactly what you need.
             <br />
             <br />
-            We’re more than just suppliers—we’re your partners in health. Shop with us today and experience the difference that premium supplements can make.
+            More than just a store, we’re your trusted partner in providing a seamless shopping experience. Browse our collection today and discover the difference of shopping with a marketplace committed to excellence and variety!
           </p>
         }
       />

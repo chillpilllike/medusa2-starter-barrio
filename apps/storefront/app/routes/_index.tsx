@@ -22,8 +22,8 @@ export default function IndexRoute() {
         className="h-[800px] !max-w-full -mt-[calc(var(--mkt-header-height)+3rem)] md:-mt-[calc(var(--mkt-header-height-desktop)+2rem)] pt-[var(--mkt-header-height)] md:pt-[var(--mkt-header-height-desktop)]"
         content={
           <div className="text-center w-full space-y-9">
-            <h4 className="font-italiana text-2xl">Unique Products</h4>
-            <h1 className="text-8xl font-jost">Exceptional Quality & Timely Delivery</h1>
+            <h4 className="font-italiana text-2xl"> </h4>
+            <h1 className="text-8xl font-jost"> </h1>
             <p className="max-w-prose mx-auto text-lg">
               
             </p>
@@ -143,13 +143,13 @@ export default function IndexRoute() {
         </div>
 
         <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-italiana md:ml-0 md:mr-[288px] lg:mr-[392px]">
-          <span className="whitespace-nowrap">The Art of Roasting</span>
+          <span className="whitespace-nowrap">Top-Quality Supplements  </span>
           <br />
           <span className="font-ballet text-[200%] whitespace-nowrap inline-block mt-6 mb-4 sm:mt-2 sm:-mb-4">
-            at Barrio
+            for Your Health
           </span>
           <br />
-          <span className="whitespace-nowrap">Crafting with Care</span>
+          <span className="whitespace-nowrap">& Wellness Journey</span>
         </h2>
       </Container>
 
@@ -167,22 +167,22 @@ export default function IndexRoute() {
         }
         right={
           <p className="text-sm h-full flex items-center justify-center">
-            At Barrio, our roasting process is a carefully honed craft, combining traditional techniques with a modern,
-            sustainable approach. Each batch of coffee is roasted in small quantities to ensure precise control over
-            every stage of the process, allowing the unique characteristics of the beans to shine through.
+            We are dedicated to supplying the finest supplements to support your health and wellness goals. 
+            We partner with trusted, reputable manufacturers to bring you a curated selection of products designed to boost your vitality, 
+            energy, and overall well-being.
             <br />
             <br />
-            We start by selecting high-quality, ethically sourced beans from farmers who share our commitment to
-            sustainability and community. The roasting process begins with a slow, even heat that coaxes out the natural
-            flavors, developing rich aromas and deep, complex profiles. Every bean undergoes a transformation, revealing
-            its distinct notes—whether it's the bright acidity of a light roast, the balanced sweetness of a medium
-            roast, or the bold, rich depth of a dark roast.
+            Our extensive range of high-quality supplements includes everything from essential vitamins and minerals to protein powders, 
+            fitness supplements, and natural remedies. Each product we offer is carefully sourced from manufacturers who share our commitment
+            to quality and integrity, ensuring you receive the best results.
             <br />
             <br />
-            Our goal is to honor the origin of each coffee, preserving its natural flavors while adding our own touch of
-            expertise. The result? A perfectly roasted coffee that reflects the heart of our community—vibrant, diverse,
-            and full of life. At Barrio, every roast tells a story, and every cup connects you to the hands that
-            nurtured it.
+            We pride ourselves on providing only the most effective supplements, backed by rigorous testing and adherence to industry standards.
+            Whether you’re a fitness enthusiast, focused on immunity, or seeking general wellness support, our products are designed to complement 
+            your lifestyle and help you achieve your goals.
+            <br />
+            <br />
+            We’re more than just suppliers—we’re your partners in health. Shop with us today and experience the difference that premium supplements can make.
           </p>
         }
       />

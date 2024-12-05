@@ -19,8 +19,8 @@ import '@app/styles/global.css';
 import { useRootLoaderData } from './hooks/useRootLoaderData';
 
 export const getRootMeta: MetaFunction = ({ data }) => {
-  const title = 'LifeFuel Australia | Top Supplement Brands Online';
-  const description = 'Discover Australia’s best online supplement store featuring top brands. Shop vitamins, proteins, and wellness products for all your health and fitness needs!';
+  const title = 'Secretgreen Australia | Multi-Brand Online Marketplace';
+const description = 'Explore Australia’s leading online store with top products from trusted vendors. Shop lifestyle, health, home, and more—everything you need in one place!';
   const ogTitle = title;
   const ogDescription = description;
   const ogImage = '';

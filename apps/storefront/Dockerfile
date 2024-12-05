@@ -1,50 +1,27 @@
-FROM node:20-alpine AS base
+# Use the official Node.js image as the base image
+FROM node:20
 
-RUN apk update && apk add --no-cache libc6-compat
-
+# Set the working directory
 WORKDIR /app
 
-FROM base AS builder
+# RUN wget -q -O medusa-config.js "https://raw.githubusercontent.com/chillpilllike/file/refs/heads/main/barrio.js
 
-COPY . .
 
-RUN corepack enable && corepack prepare yarn@4.5.0 --activate
-RUN yarn cache clean
-RUN yarn add remix-validated-form
-RUN yarn add @vanilla-extract/css
+# RUN yarn add -D @medusajs/medusa-cli
 
-# Ensure dependencies are installed
+# Copy the .env.template to .env (ensure .env exists in your build context)
+# COPY .env .env
+
+# Copy package.json and yarn.lock for dependency installation
+
+# Install dependencies
 RUN yarn install
 
-RUN yarn install turbo@2.1.2 --save-dev --force
-ENV TURBO_TELEMETRY=0
+RUN yarn build
 
-# Run Turborepo prune command
-RUN npx --yes turbo@2.1.2 prune --scope=storefront --docker
+# Expose the default Medusa port
+EXPOSE 8000
+# EXPOSE 3000
 
-FROM base AS installer
-
-COPY --from=builder /app/out/json/ .
-COPY --from=builder /app/out/yarn.lock yarn.lock
-COPY --from=builder /app/.yarnrc.yml .yarnrc.yml
-COPY --from=builder /app/.yarn .yarn
-
-RUN yarn install
-
-COPY --from=builder /app/out/full/ .
-
-RUN yarn turbo build --filter=storefront && \
-    yarn workspaces focus --all --production && \
-    rm -rf node_modules/.cache .yarn/cache
-
-FROM base AS runner
-
-COPY --chown=node:node --from=installer /app/ .
-
-USER 1000
-
-WORKDIR /app/apps/storefront
-
-ENV PORT=80
-
-CMD ["yarn", "start"]
+# Command to start the Medusa backend with migrations
+CMD ["sh", "-c", "yarn start"]

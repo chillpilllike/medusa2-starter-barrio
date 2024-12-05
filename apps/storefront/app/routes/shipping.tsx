@@ -76,45 +76,73 @@ export default function IndexRoute() {
   return (
     <>
       <Container className="!px-0 py-0 sm:!p-16">
-        <Hero
-          className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
-          content={
-            <div className="text-center w-full space-y-9">
-              <h4 className="text-lg md:text-2xl font-italiana tracking-wider">ABOUT US</h4>
-              <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-                Our Story
-              </h1>
-              <p className="mx-auto text-md md:text-2xl !leading-normal">
-                At Barrio Coffee Roastery, we’re more than just a coffee business—we’re a community. Inspired by the
-                essence of a "barrio," a close-knit neighborhood where people gather, share, and connect, we aim to
-                bring that sense of belonging and warmth to every cup of coffee we roast. From the moment we started,
-                our passion has been to create exceptional coffee that{' '}
-                <span className="font-bold">brings people together, one sip at a time.</span>
-              </p>
-            </div>
-          }
-          actionsClassName="!flex-row w-full justify-center !font-base"
-          actions={[
-            {
-              label: 'Shop Our Coffee',
-              url: '/products',
-            },
-            {
-              label: 'Join the Barrio Community',
-              url: '#',
-            },
-          ]}
-        />
-      </Container>
+  <Hero
+    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    content={
+      <div className="text-center w-full space-y-9">
+        <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
+          Shipping Policy
+        </h1>
 
-      <Container className="pt-4 flex flex-col gap-16 py-0 sm:!px-16 pb-44">
-        <div className="font-italiana text-4xl break-words md:text-6xl lg:text-7xl">
-          Find your people, find your <span className="font-ballet text-[150%] leading-tight">Barrio</span>
-        </div>
-        {locations.map((location) => (
-          <Location {...location} />
-        ))}
-      </Container>
+        {/* Introduction */}
+        <section className="text-left space-y-6">
+          <p className="text-md md:text-xl leading-relaxed">
+            We strive to get your orders to you as quickly and efficiently as possible. Please review our shipping policy below for important information regarding shipping times, costs, and procedures.
+          </p>
+        </section>
+
+        {/* Shipping Methods and Costs */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Shipping Methods and Costs</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            We offer the following shipping methods:
+          </p>
+          <ul className="list-disc pl-6 text-md md:text-xl leading-relaxed">
+            <li>Standard Shipping: 7-12 Days</li>
+            <li>Express Shipping: 3-7 Days</li>
+          </ul>
+          <p className="text-md md:text-xl leading-relaxed">
+            Shipping costs are calculated based on the weight of your order and your shipping destination. You will be able to see the exact shipping cost during checkout before you complete your purchase. Sometimes the product's weight may be calculated based on the product dimensions and courier services charge differently.
+          </p>
+        </section>
+
+        {/* Processing Time */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Processing Time</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            Orders are typically processed within 2-5 business days of being placed. Please note that processing times may be longer during peak periods or holidays.
+          </p>
+        </section>
+
+        {/* Order Tracking */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Order Tracking</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            Once your order has been shipped, you will receive a shipping confirmation email with a tracking number. You can use this tracking number to track the progress of your shipment.
+          </p>
+        </section>
+
+        {/* International Shipping */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">International Shipping</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            We currently offer international shipping to selective countries. Please note that international shipments may be subject to customs duties and taxes, which are the responsibility of the recipient.
+          </p>
+        </section>
+
+        {/* Contact Us */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Contact Us</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            For any query related to shipping, you can contact us via our chat support.
+          </p>
+        </section>
+      </div>
+    }
+  />
+</Container>
+
+     
     </>
   );
 }

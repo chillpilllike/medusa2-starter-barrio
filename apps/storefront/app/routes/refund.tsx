@@ -82,14 +82,51 @@ export default function IndexRoute() {
             <div className="text-center w-full space-y-9">
               <h4 className="text-lg md:text-2xl font-italiana tracking-wider">REFUND POLICY</h4>
               <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-                Our Story
+                Checkout our refund policy!
               </h1>
               <p className="mx-auto text-md md:text-2xl !leading-normal">
-                At Barrio Coffee Roastery, we’re more than just a coffee business—we’re a community. Inspired by the
-                essence of a "barrio," a close-knit neighborhood where people gather, share, and connect, we aim to
-                bring that sense of belonging and warmth to every cup of coffee we roast. From the moment we started,
-                our passion has been to create exceptional coffee that{' '}
-                <span className="font-bold">brings people together, one sip at a time.</span>
+                <div class="p-6 sm:p-10 md:p-16 bg-gray-50 text-gray-800">
+  <h1 class="text-4xl font-bold mb-6">Overview</h1>
+  <p class="mb-6">Thank you for shopping at our store. If you are not entirely satisfied with your purchase, we're here to help. Our products can be returned within 30 days of the original purchase.</p>
+
+  <h2 class="text-2xl font-semibold mb-4">Eligibility for Returns</h2>
+  <ul class="list-disc pl-6 space-y-2 mb-6">
+    <li>The product was purchased in the last 30 days.</li>
+    <li>The product is in its original packaging.</li>
+    <li>The product isn't used or damaged.</li>
+    <li>You have the receipt or proof of purchase.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Products that Cannot be Returned</h2>
+  <ul class="list-disc pl-6 space-y-2 mb-6">
+    <li>Gift cards.</li>
+    <li>Downloadable software products.</li>
+    <li>Some health and personal care items.</li>
+    <li>Any item not in its original condition, damaged, or missing parts for reasons not due to our error.</li>
+    <li>Any item that is returned more than 30 days after delivery.</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold mb-4">Initiating a Return</h2>
+  <ol class="list-decimal pl-6 space-y-4 mb-6">
+    <li>
+      <span class="font-semibold">Contact Us:</span> Before sending the product back to us, please contact us:
+      <a href="#" class="text-blue-500 underline">By visiting this page on our website: Contact Us</a>
+    </li>
+    <li>
+      <span class="font-semibold">Send the Product:</span> After contacting us, you will be instructed on how and where to send the product. Shipping costs are refundable. If you receive a refund, the cost of return shipping will not be deducted from your refund.
+    </li>
+  </ol>
+
+  <h2 class="text-2xl font-semibold mb-4">Processing Your Return</h2>
+  <p class="mb-6">Upon receiving the product, we will inspect it and notify you that we have received your returned item. We will immediately notify you of the status of your refund after inspecting the item.</p>
+  <p class="mb-6">If your return is approved, we will initiate a refund to your credit card (or original method of payment). You will receive the credit within a certain number of days, depending on your card issuer's policies. In some cases, we may refund to your bank account via wire transfer.</p>
+
+  <h2 class="text-2xl font-semibold mb-4">Exchanges (if applicable)</h2>
+  <p>If your product is defective or damaged and you need to exchange it for the same item, then contact us 
+    <a href="#" class="text-blue-500 underline">Contact us</a> and send your item to the address we provide.
+  </p>
+</div>
+
               </p>
             </div>
           }

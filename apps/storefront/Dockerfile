@@ -10,6 +10,8 @@ COPY . .
 
 RUN corepack enable && corepack prepare yarn@4.5.1 --activate
 
+RUN yarn add remix-validated-form@5.1.0
+
 # Ensure dependencies are installed
 RUN yarn install
 

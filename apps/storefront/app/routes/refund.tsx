@@ -127,7 +127,119 @@ export default function IndexRoute() {
           }
         />
       </Container>
+
+
+        <Container className="!px-0 py-0 sm:!p-16">
+        <Hero
+          className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+          content={
+            <div className="text-center w-full space-y-9">
+              <h4 className="text-lg md:text-2xl font-jost tracking-wider">3.</h4>
+              <h1 className="text-4xl md:text-8xl font-jost tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
+                Products that Cannot be Returned
+              </h1>
+              <p className="mx-auto text-md md:text-2xl !leading-normal">
+                Some items are not eligible for returns, including:<br />
+          Gift cards.<br />
+          Downloadable software products.<br />
+          Some health and personal care items.<br />
+          Any item not in its original condition, damaged, or missing parts for reasons not due to our error.<br />
+          Any item that is returned more than 30 days after delivery.
+              </p>
+            </div>
+          }
+        />
+      </Container>
+
+      <Container className="!px-0 py-0 sm:!p-16">
+  <Hero
+    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    content={
+      <div className="text-center w-full space-y-9">
+        <h4 className="text-lg md:text-2xl font-jost tracking-wider">4.</h4>
+        <h1 className="text-4xl md:text-8xl font-jost tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
+          Initiating a Return
+        </h1>
+        <p className="mx-auto text-md md:text-2xl !leading-normal">
+          <strong>Contact Us:</strong> Before sending the product back to us, please contact us:<br />
+          By visiting this page on our website: <a href="/contact" className="text-blue-600 underline">Contact Us</a><br />
+          <strong>Send the Product:</strong> After contacting us, you will be instructed on how and where to send the product. Shipping costs are refundable. If you receive a refund, the cost of return shipping will not be deducted from your refund.
+        </p>
+      </div>
+    }
+  />
+</Container>
       
+
+      <Container className="!px-0 py-0 sm:!p-16">
+  <Hero
+    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    content={
+      <div className="text-center w-full space-y-9">
+        <h4 className="text-lg md:text-2xl font-italiana tracking-wider">5.</h4>
+        <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
+          Processing Your Return
+        </h1>
+        <p className="mx-auto text-md md:text-2xl !leading-normal">
+          Upon receiving the product, we will inspect it and notify you that we have received your returned item.<br />
+          We will immediately notify you of the status of your refund after inspecting the item.<br /><br />
+          If your return is approved, we will initiate a refund to your credit card (or original method of payment).<br />
+          You will receive the credit within a certain number of days, depending on your card issuer's policies.<br />
+          In some cases, we may refund to your bank account via wire transfer.
+        </p>
+      </div>
+    }
+  />
+</Container>
+
+
+      <Container className="!px-0 py-0 sm:!p-16">
+  <Hero
+    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    content={
+      <div className="text-center w-full space-y-9">
+        <h4 className="text-lg md:text-2xl font-italiana tracking-wider">6.</h4>
+        <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
+          Exchanges (if applicable)
+        </h1>
+        <p className="mx-auto text-md md:text-2xl !leading-normal">
+          If your product is defective or damaged and you need to exchange it for the same item, then contact us.<br />
+          <a href="/contact-us" className="text-blue-500 underline">Contact us</a> and send your item to the address we provide.
+        </p>
+      </div>
+    }
+  />
+</Container>
+
+      <Container className="!px-0 py-0 sm:!p-16">
+  <Hero
+    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    content={
+      <div className="text-center w-full space-y-9">
+        <h4 className="text-lg md:text-2xl font-italiana tracking-wider">7.</h4>
+        <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
+          Contact Us
+        </h1>
+        <p className="mx-auto text-md md:text-2xl !leading-normal">
+          If you have any questions about our Refund Policy, please contact us:<br />
+          By visiting this page on our website: <a href="/contact-us" className="text-blue-500 underline">Contact us</a><br />
+          By online chat support. Click the chat button at the bottom left of every page.
+        </p>
+      </div>
+    }
+      actionsClassName="!flex-row w-full justify-center !font-base"
+          actions={[
+            {
+              label: 'Contact us',
+              url: '/contact',
+            },
+            {
+              label: 'Shop',
+              url: '/products',
+            },
+          ]}
+  />
+</Container>
 
       <Container className="pt-4 flex flex-col gap-16 py-0 sm:!px-16 pb-44">
         <div className="font-italiana text-4xl break-words md:text-6xl lg:text-7xl">

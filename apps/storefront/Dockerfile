@@ -8,6 +8,10 @@ FROM base AS builder
 
 COPY . .
 
+# Ensure dependencies are installed
+RUN yarn install
+
+# Run Turborepo prune command
 RUN npx --yes turbo@2.1.2 prune --scope=storefront --docker
 
 FROM base AS installer

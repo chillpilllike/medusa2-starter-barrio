@@ -81,11 +81,11 @@ export const Footer = () => {
             <SocialIcons siteSettings={settings} />
 
             <div className="flex flex-col gap-4 mt-4">
-              <h5>ABN</h5>
+              <h5> </h5>
               <p className="text-sm">
-                28 069 966 859
+                ABN 28 069 966 859
                 <br />
-                Open 7AM - 4PM Daily
+                
               </p>
             </div>
           </div>

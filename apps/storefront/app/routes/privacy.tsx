@@ -75,46 +75,103 @@ const Location = ({ title, addressLines, phone, hours, imageUrl }: LocationProps
 export default function IndexRoute() {
   return (
     <>
-      <Container className="!px-0 py-0 sm:!p-16">
-        <Hero
-          className="min-h-[400px] !max-w-full bg-accent-50 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
-          content={
-            <div className="text-center w-full space-y-9">
-              <h4 className="text-lg md:text-2xl font-italiana tracking-wider">ABOUT US</h4>
-              <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-                Our Story
-              </h1>
-              <p className="mx-auto text-md md:text-2xl !leading-normal">
-                At Barrio Coffee Roastery, we’re more than just a coffee business—we’re a community. Inspired by the
-                essence of a "barrio," a close-knit neighborhood where people gather, share, and connect, we aim to
-                bring that sense of belonging and warmth to every cup of coffee we roast. From the moment we started,
-                our passion has been to create exceptional coffee that{' '}
-                <span className="font-bold">brings people together, one sip at a time.</span>
-              </p>
-            </div>
-          }
-          actionsClassName="!flex-row w-full justify-center !font-base"
-          actions={[
-            {
-              label: 'Shop Our Coffee',
-              url: '/products',
-            },
-            {
-              label: 'Join the Barrio Community',
-              url: '#',
-            },
-          ]}
-        />
-      </Container>
+     <Container className="!px-0 py-0 sm:!p-16">
+  <Hero
+    className="min-h-[400px] !max-w-full bg-zinc-400 sm:rounded-3xl p-6 sm:p-10 md:p-[88px] md:px-[88px]"
+    content={
+      <div className="text-center w-full space-y-9">
+        <h1 className="text-4xl md:text-8xl font-italiana tracking-wider [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
+          Privacy Policy
+        </h1>
 
-      <Container className="pt-4 flex flex-col gap-16 py-0 sm:!px-16 pb-44">
-        <div className="font-italiana text-4xl break-words md:text-6xl lg:text-7xl">
-          Find your people, find your <span className="font-ballet text-[150%] leading-tight">Barrio</span>
-        </div>
-        {locations.map((location) => (
-          <Location {...location} />
-        ))}
-      </Container>
+        {/* Introduction */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Introduction</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            At our store, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our online store.
+          </p>
+        </section>
+
+        {/* Information We Collect */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Information We Collect</h2>
+          <ul className="list-disc pl-6 text-md md:text-xl leading-relaxed">
+            <li>Contact information (name, email address, phone number)</li>
+            <li>Shipping and billing address</li>
+            <li>Payment information</li>
+            <li>Order history</li>
+            <li>Device and browser information</li>
+            <li>IP address</li>
+          </ul>
+        </section>
+
+        {/* How We Use Your Information */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">How We Use Your Information</h2>
+          <ul className="list-disc pl-6 text-md md:text-xl leading-relaxed">
+            <li>Process and fulfill your orders</li>
+            <li>Provide customer support</li>
+            <li>Send you marketing communications (if you've opted in)</li>
+            <li>Improve our website and services</li>
+            <li>Prevent fraud and protect our store</li>
+          </ul>
+        </section>
+
+        {/* Sharing Your Information */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Sharing Your Information</h2>
+          <ul className="list-disc pl-6 text-md md:text-xl leading-relaxed">
+            <li>Third-party service providers who help us operate our store</li>
+            <li>Law enforcement or government agencies if required by law</li>
+          </ul>
+        </section>
+
+        {/* Your Choices */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Your Choices</h2>
+          <ul className="list-disc pl-6 text-md md:text-xl leading-relaxed">
+            <li>Access, update, or delete your personal information</li>
+            <li>Opt out of marketing communications</li>
+          </ul>
+        </section>
+
+        {/* Security */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Security</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            We take reasonable measures to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is 100% secure.
+          </p>
+        </section>
+
+        {/* Children's Privacy */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Children's Privacy</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            Our store is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.
+          </p>
+        </section>
+
+        {/* Changes to this Privacy Policy */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Changes to this Privacy Policy</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+          </p>
+        </section>
+
+        {/* Contact Us */}
+        <section className="text-left space-y-6">
+          <h2 className="text-2xl font-bold">Contact Us</h2>
+          <p className="text-md md:text-xl leading-relaxed">
+            If you have any questions about this Privacy Policy, please contact us.
+          </p>
+        </section>
+      </div>
+    }
+  />
+</Container>
+
+
     </>
   );
 }

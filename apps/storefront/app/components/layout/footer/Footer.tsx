@@ -85,7 +85,7 @@ export const Footer = () => {
               <p className="text-sm">
                 ABN 28 069 966 859
                 <br />
-                
+                Made with ❤️ by market.haus
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="flex flex-col items-start gap-1 text-sm"
             >
-              © {new Date().getFullYear()} Made with ❤️ by market.haus
+              © {new Date().getFullYear()} All rights reserved.
             </a>
           </div>
           <div className="mt-1 flex flex-col justify-end text-xs sm:mt-0">

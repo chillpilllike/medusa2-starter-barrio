@@ -96,7 +96,7 @@ export default function IndexRoute() {
         className="pb-10 min-h-[734px] !max-w-full"
         content={
           <div className="text-center w-full space-y-9 pt-9">
-            <h4 className="font-italiana text-2xl">SUBSCRIBE & SAVE</h4>
+            <h4 className="font-jost text-2xl">Order & Relax!</h4>
             <h1 className="text-4xl lg:text-7xl font-italiana">
               Sit back, let us take care&nbsp;of&nbsp;your&nbsp;coffee
             </h1>

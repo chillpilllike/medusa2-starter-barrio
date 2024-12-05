@@ -22,7 +22,7 @@ export default function IndexRoute() {
         className="h-[800px] !max-w-full -mt-[calc(var(--mkt-header-height)+3rem)] md:-mt-[calc(var(--mkt-header-height-desktop)+2rem)] pt-[var(--mkt-header-height)] md:pt-[var(--mkt-header-height-desktop)]"
         content={
           <div className="text-center w-full space-y-9">
-            <h4 className="font-italiana text-2xl"> </h4>
+            <h4 className="font-jost text-2xl"> </h4>
             <h1 className="text-8xl font-jost"> </h1>
             <p className="max-w-prose mx-auto text-lg">
               
@@ -83,7 +83,7 @@ export default function IndexRoute() {
 
       <ProductList
         className="!pb-[100px]"
-        heading="Our Blends"
+        heading="Our Collections"
         actions={[
           {
             label: 'View all',
@@ -97,7 +97,7 @@ export default function IndexRoute() {
         content={
           <div className="text-center w-full space-y-9 pt-9">
             <h4 className="font-jost text-2xl">Order & Relax!</h4>
-            <h1 className="text-4xl lg:text-7xl font-italiana">
+            <h1 className="text-4xl lg:text-7xl font-jost">
               Sit back, let us take care&nbsp;of&nbsp;your&nbsp;coffee
             </h1>
 
@@ -139,13 +139,13 @@ export default function IndexRoute() {
 
       <Container className="flex flex-col-reverse gap-8 items-center md:items-start p-6 lg:pt-24 xl:pt-16 lg:px-24 relative lg:min-h-[354px] min-h-[276px]">
         <div className="flex justify-center md:justify-end md:absolute md:-top-[30%] w-60 md:w-80 md:right-0 lg:right-20 lg:w-[420px]">
-          <Image src="/assets/images/header-image-2.png" alt="Barrio background" height={520} width={420} />
+          <Image src="/assets/images/supplements_pills.png" alt="Barrio background" height={520} width={420} />
         </div>
 
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-italiana md:ml-0 md:mr-[288px] lg:mr-[392px]">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-jost md:ml-0 md:mr-[288px] lg:mr-[392px]">
           <span className="whitespace-nowrap">Top-Quality Supplements  </span>
           <br />
-          <span className="font-ballet text-[200%] whitespace-nowrap inline-block mt-6 mb-4 sm:mt-2 sm:-mb-4">
+          <span className="font-jost text-[200%] whitespace-nowrap inline-block mt-6 mb-4 sm:mt-2 sm:-mb-4">
             for Your Health
           </span>
           <br />
@@ -160,7 +160,7 @@ export default function IndexRoute() {
             <div
               className="bg-cover bg-no-repeat bg-center w-full rounded-3xl h-[410px]"
               style={{
-                backgroundImage: 'url(/assets/images/coffee-shop-2.png)',
+                backgroundImage: 'url(/assets/images/supplements_bg.png)',
               }}
             />
           </div>
@@ -200,14 +200,14 @@ export default function IndexRoute() {
         ]}
         content={
           <div className="space-y-8 flex flex-col justify-center items-center">
-            <h4 className="text-xl font-italiana">FIND YOUR COMMUNITY</h4>
-            <h3 className="text-7xl  font-aboreto">BARRIO</h3>
-            <p className="text-xl">Ship, Share & Connect Over Coffee</p>
+            <h4 className="text-xl font-jost">Unique Products,</h4>
+            <h3 className="text-7xl  font-jost">Exceptional Quality</h3>
+            <p className="text-xl">Fast Ship, Timely Delivery</p>
             <ActionList
               actions={[
                 {
-                  label: 'Subscribe for Events',
-                  url: '#',
+                  label: 'Shop Now',
+                  url: '/products',
                 },
               ]}
             />

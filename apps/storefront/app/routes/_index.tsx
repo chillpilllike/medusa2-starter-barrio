@@ -143,13 +143,13 @@ export default function IndexRoute() {
         </div>
 
         <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-jost md:ml-0 md:mr-[288px] lg:mr-[392px]">
-          <span className="whitespace-nowrap">Top-Quality Supplements  </span>
+          <span className="whitespace-nowrap">Top-Quality</span>
           <br />
           <span className="font-jost text-[200%] whitespace-nowrap inline-block mt-6 mb-4 sm:mt-2 sm:-mb-4">
-            for Your Health
+            Supplements
           </span>
           <br />
-          <span className="whitespace-nowrap">& Wellness Journey</span>
+          <span className="whitespace-nowrap">for Your Health & Wellness Journey</span>
         </h2>
       </Container>
 

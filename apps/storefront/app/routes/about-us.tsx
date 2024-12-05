@@ -85,7 +85,7 @@ export default function IndexRoute() {
                 Our Story
               </h1>
               <p className="mx-auto text-md md:text-2xl !leading-normal">
-                We’re more than just a supplements store—we’re a community. Inspired by the diverse Australian lifestyle and our shared commitment to health and wellness, we aim to bring people together through trusted, high-quality products. Our journey began with a simple goal: to offer a curated range of supplements from leading brands that support every step of your health and fitness journey. Whether you’re looking to enhance performance, boost wellness, or achieve your fitness goals, EcoSupps Australia is here to fuel your potential, every step of the way.
+                Welcome to our online store, where we bring you an extensive range of products from trusted vendors, all in one place. From health and wellness essentials to lifestyle, home, and fitness items, we have something for everyone. Whether you’re looking to enhance your daily routine, find the perfect gift, or discover the latest must-haves, our carefully curated selection ensures quality and satisfaction. Shop with ease, explore diverse brands, and enjoy a seamless shopping experience tailored to your needs.
               </p>
             </div>
           }

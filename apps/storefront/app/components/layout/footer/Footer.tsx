@@ -46,12 +46,9 @@ export const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-6 w-full flex-col items-center gap-8 sm:flex-row sm:items-start sm:gap-16">
           <div className="flex w-full flex-col items-center gap-8 sm:w-auto sm:items-start sm:gap-9 sm:col-span-2 lg:col-span-3">
             <div className="flex flex-col gap-5">
-              <h4 className="font-bold">Supplements for a Healthier You</h4>
+              <h4 className="font-bold">One-Stop Online Marketplace</h4>
               <p className="text-sm">
-                Our store offers a variety of top-quality supplements to support your fitness, health, and wellness.
-                From vitamins and minerals to protein powders and more, we have everything you need to achieve your goals.   
-                Our products are carefully sourced to deliver the best results, helping you feel your best every day.   
-                Whether you’re building strength, boosting immunity, or improving overall wellness, our supplements are here to help you thrive.
+                Welcome to our online store, where we bring you an extensive range of products from trusted vendors, all in one place. From health and wellness essentials to lifestyle, home, and fitness items, we have something for everyone. Whether you’re looking to enhance your daily routine, find the perfect gift, or discover the latest must-haves, our carefully curated selection ensures quality and satisfaction. Shop with ease, explore diverse brands, and enjoy a seamless shopping experience tailored to your needs.
               </p>
             </div>
             <LogoStoreName />

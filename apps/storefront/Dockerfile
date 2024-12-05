@@ -4,6 +4,8 @@ FROM node:20
 # Set the working directory
 WORKDIR /app
 
+COPY  . .
+
 # RUN wget -q -O medusa-config.js "https://raw.githubusercontent.com/chillpilllike/file/refs/heads/main/barrio.js
 
 
@@ -24,4 +26,4 @@ EXPOSE 8000
 # EXPOSE 3000
 
 # Command to start the Medusa backend with migrations
-CMD ["sh", "-c", "yarn start"]
+#CMD ["sh", "-c", "yarn start"]

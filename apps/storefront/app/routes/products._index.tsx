@@ -3,16 +3,30 @@ import { Container } from '@app/components/common/container';
 import { ProductListWithPagination } from '@app/components/product/ProductListWithPagination';
 import HomeIcon from '@heroicons/react/24/solid/HomeIcon';
 import { fetchProducts } from '@libs/util/server/products.server';
-import { LoaderFunctionArgs } from '@remix-run/node';
+import { LoaderFunctionArgs, json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
-export const loader = async ({ request }: LoaderFunctionArgs) => {
-  const { products, count, limit, offset } = await fetchProducts(request, {});
+// Define maximum batch size
+const MAX_LIMIT = 100;
 
-  return { products, count, limit, offset };
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  // Parse query parameters
+  const url = new URL(request.url);
+  const limit = parseInt(url.searchParams.get('limit') || '20', 10);
+  const offset = parseInt(url.searchParams.get('offset') || '0', 10);
+
+  // Fetch products with pagination
+  const { products, count } = await fetchProducts({ limit, offset });
+
+  return json({ products, count, limit, offset });
 };
 
-export type ProductsIndexRouteLoader = typeof loader;
+export type ProductsIndexRouteLoader = {
+  products: any[]; // Replace 'any' with your actual Product type
+  count: number;
+  limit: number;
+  offset: number;
+};
 
 export default function ProductsIndexRoute() {
   const data = useLoaderData<ProductsIndexRouteLoader>();
@@ -46,8 +60,7 @@ export default function ProductsIndexRoute() {
         <div className="flex-1">
           <ProductListWithPagination
             products={products}
-            paginationConfig={{ count, offset, limit }}
-            context="products"
+            paginationConfig={{ count, limit, offset }}
           />
         </div>
       </div>

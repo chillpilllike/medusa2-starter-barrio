@@ -9,29 +9,21 @@ import { getSelectedRegionId, setSelectedRegionId } from './cookies.server';
 import { enrichLineItems, retrieveCart } from './data/cart.server';
 import { getCustomer } from './data/customer.server';
 import { getSelectedRegion, listRegions } from './data/regions.server';
+import { fetchProducts } from './products.server';
 import { RemixLoaderResponse } from 'types/remix';
 
-// Removed fetchHasProducts and fetchProducts import/call
+const fetchHasProducts = async (request: Request) => {
+  return await fetchProducts(request, { limit: 1, offset: 999_999 }).then((res) => res.count > 0);
+};
 
 export const getRootLoader = async ({ request }: LoaderFunctionArgs) => {
-  // Attempt to retrieve region
   const region = await getSelectedRegion(request.headers);
 
-  // Resolve the productService from the Medusa container if available
-  const productService = (request as any)?.scope?.resolve("productService");
-  if (!productService) {
-    throw new Error("Unable to access productService. Ensure that 'request.scope' is accessible here.");
-  }
-
-  // Directly query the product service
-  const [, productCount] = await productService.listAndCount({}, { take: 1, skip: 0 });
-  const hasPublishedProducts = productCount > 0;
-
-  // Retrieve other data in parallel
-  const [cart, regions, customer] = await Promise.all([
+  const [cart, regions, customer, hasPublishedProducts] = await Promise.all([
     retrieveCart(request),
     listRegions(),
     getCustomer(request),
+    fetchHasProducts(request),
   ]);
 
   const headers = new Headers();
@@ -68,7 +60,7 @@ export const getRootLoader = async ({ request }: LoaderFunctionArgs) => {
       region,
       siteDetails: {
         store: {
-          name: 'Secretgreen',
+          name: 'SECRETGREEN',
         },
         settings: siteSettings,
         headerNavigationItems,
@@ -81,4 +73,5 @@ export const getRootLoader = async ({ request }: LoaderFunctionArgs) => {
 };
 
 export type RootLoader = typeof getRootLoader;
+
 export type RootLoaderResponse = RemixLoaderResponse<typeof getRootLoader>['data'];

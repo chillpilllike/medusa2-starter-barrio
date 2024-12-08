@@ -2,31 +2,21 @@ import { Breadcrumbs } from '@app/components/common/breadcrumbs';
 import { Container } from '@app/components/common/container';
 import { ProductListWithPagination } from '@app/components/product/ProductListWithPagination';
 import HomeIcon from '@heroicons/react/24/solid/HomeIcon';
-import { fetchProducts } from 'libs/util/server/products.server'; // Updated path for server logic
-import { LoaderFunctionArgs, json } from '@remix-run/node';
+import { fetchProducts } from '@libs/util/server/products.server';
+import { LoaderFunctionArgs } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
-// Define maximum batch size
-const MAX_LIMIT = 100;
-
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  // Parse query parameters
   const url = new URL(request.url);
-  const limit = parseInt(url.searchParams.get('limit') || '20', 10);
-  const offset = parseInt(url.searchParams.get('offset') || '0', 10);
+  const limit = Number(url.searchParams.get('limit')) || 1000;   // Default limit to 1000
+  const offset = Number(url.searchParams.get('offset')) || 0;     // Default offset to 0
 
-  // Fetch products with pagination
-  const { products, count } = await fetchProducts({ limit, offset });
+  const { products, count, limit: usedLimit, offset: usedOffset } = await fetchProducts(request, { limit, offset });
 
-  return json({ products, count, limit, offset });
+  return { products, count, limit: usedLimit, offset: usedOffset };
 };
 
-export type ProductsIndexRouteLoader = {
-  products: StoreProduct[]; // Use the correct type for products
-  count: number;
-  limit: number;
-  offset: number;
-};
+export type ProductsIndexRouteLoader = typeof loader;
 
 export default function ProductsIndexRoute() {
   const data = useLoaderData<ProductsIndexRouteLoader>();
@@ -60,7 +50,8 @@ export default function ProductsIndexRoute() {
         <div className="flex-1">
           <ProductListWithPagination
             products={products}
-            paginationConfig={{ count, limit, offset }}
+            paginationConfig={{ count, offset, limit }}
+            context="products"
           />
         </div>
       </div>

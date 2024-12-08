@@ -6,7 +6,7 @@ import { MILLIS } from './cache-builder.server';
 
 export const fetchProducts = async (
   request: Request,
-  { currency_code, limit, offset, ...query }: HttpTypes.StoreProductParams = {},
+  { currency_code, limit = 1000, offset = 0, ...query }: HttpTypes.StoreProductParams = {},
 ) => {
   const region = await getSelectedRegion(request.headers);
 
@@ -16,13 +16,12 @@ export const fetchProducts = async (
     staleWhileRevalidate: MILLIS.ONE_HOUR,
     ttl: MILLIS.TEN_SECONDS,
     async getFreshValue() {
-      const { products, count } = await sdk.store.product.list({
+      return await sdk.store.product.list({
         ...query,
+        region_id: region.id,
         limit,
         offset,
-        region_id: region.id,
       });
-      return { products, count };
     },
   });
 };

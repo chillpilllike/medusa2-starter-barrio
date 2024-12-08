@@ -13,6 +13,8 @@ import { fetchProducts } from './products.server';
 import { RemixLoaderResponse } from 'types/remix';
 
 const fetchHasProducts = async (request: Request) => {
+  // This checks if there are any products at all by trying to fetch one product far into the list.
+  // Adjusting offset if needed, but it's likely fine as is.
   return await fetchProducts(request, { limit: 1, offset: 999_999 }).then((res) => res.count > 0);
 };
 
@@ -60,7 +62,7 @@ export const getRootLoader = async ({ request }: LoaderFunctionArgs) => {
       region,
       siteDetails: {
         store: {
-          name: 'SECRETGREEN',
+          name: 'BARRIO',
         },
         settings: siteSettings,
         headerNavigationItems,

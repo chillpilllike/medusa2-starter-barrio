@@ -7,13 +7,9 @@ import { LoaderFunctionArgs } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  const url = new URL(request.url);
-  const limit = Number(url.searchParams.get('limit')) || 1000;   // Default limit to 1000
-  const offset = Number(url.searchParams.get('offset')) || 0;     // Default offset to 0
+  const { products, count, limit, offset } = await fetchProducts(request, {});
 
-  const { products, count, limit: usedLimit, offset: usedOffset } = await fetchProducts(request, { limit, offset });
-
-  return { products, count, limit: usedLimit, offset: usedOffset };
+  return { products, count, limit, offset };
 };
 
 export type ProductsIndexRouteLoader = typeof loader;

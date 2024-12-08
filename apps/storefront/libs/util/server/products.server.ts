@@ -1,22 +1,28 @@
-import { knex } from '@app/utils/db'; // Import your database connection utility
-import { StoreProduct } from '@medusajs/types'; // Correct product type
+import { sdk, sdkCache } from '@libs/util/server/client.server';
+import { HttpTypes } from '@medusajs/types';
+import { getSelectedRegion } from './data/regions.server';
+import cachified from '@epic-web/cachified';
+import { MILLIS } from './cache-builder.server';
 
-export async function fetchProducts({
-  limit,
-  offset,
-}: {
-  limit: number;
-  offset: number;
-}): Promise<{ products: StoreProduct[]; count: number }> {
-  // Fetch products with pagination
-  const products = await knex<StoreProduct>('products')
-    .select('*')
-    .limit(limit)
-    .offset(offset);
+export const fetchProducts = async (
+  request: Request,
+  { currency_code, limit, offset, ...query }: HttpTypes.StoreProductParams = {},
+) => {
+  const region = await getSelectedRegion(request.headers);
 
-  // Fetch total product count
-  const countResult = await knex('products').count('* as total');
-  const count = parseInt(countResult[0].total, 10);
-
-  return { products, count };
-}
+  return await cachified({
+    key: `products-${JSON.stringify({ limit, offset, ...query })}`,
+    cache: sdkCache,
+    staleWhileRevalidate: MILLIS.ONE_HOUR,
+    ttl: MILLIS.TEN_SECONDS,
+    async getFreshValue() {
+      const { products, count } = await sdk.store.product.list({
+        ...query,
+        limit,
+        offset,
+        region_id: region.id,
+      });
+      return { products, count };
+    },
+  });
+};

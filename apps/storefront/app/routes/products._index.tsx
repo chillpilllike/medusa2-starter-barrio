@@ -2,7 +2,7 @@ import { Breadcrumbs } from '@app/components/common/breadcrumbs';
 import { Container } from '@app/components/common/container';
 import { ProductListWithPagination } from '@app/components/product/ProductListWithPagination';
 import HomeIcon from '@heroicons/react/24/solid/HomeIcon';
-import { fetchProducts } from '@libs/util/server/products.server';
+import { fetchProducts } from 'libs/util/server/products.server'; // Updated path for server logic
 import { LoaderFunctionArgs, json } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
@@ -22,7 +22,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 };
 
 export type ProductsIndexRouteLoader = {
-  products: any[]; // Replace 'any' with your actual Product type
+  products: StoreProduct[]; // Use the correct type for products
   count: number;
   limit: number;
   offset: number;

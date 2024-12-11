@@ -8,7 +8,7 @@ import { useRegions } from '@app/hooks/useRegions';
 import { useRootLoaderData } from '@app/hooks/useRootLoaderData';
 import { useSiteDetails } from '@app/hooks/useSiteDetails';
 import clsx from 'clsx';
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import { LogoStoreName } from '@app/components/LogoStoreName/LogoStoreName';
 import { NewsletterSubscription } from '@app/components/newsletter/Newsletter';
 import { RegionActions } from '@app/routes/api.region';
@@ -39,6 +39,61 @@ export const Footer = () => {
       { method: 'post', action: '/api/region' },
     );
   };
+
+  useEffect(() => {
+    // Insert Reamaze Loader Script
+    const reamazeLoaderScript = document.createElement('script');
+    reamazeLoaderScript.type = 'text/javascript';
+    reamazeLoaderScript.async = true;
+    reamazeLoaderScript.src = 'https://cdn.reamaze.com/assets/reamaze-loader.js';
+    document.body.appendChild(reamazeLoaderScript);
+
+    // Insert Reamaze Configuration Script
+    const reamazeConfigScript = document.createElement('script');
+    reamazeConfigScript.type = 'text/javascript';
+    reamazeConfigScript.innerHTML = `
+       var _support = _support || { 'ui': {}, 'user': {} };
+  _support['account'] = 'lifefuelau';
+  _support['ui']['contactMode'] = 'mixed';
+  _support['ui']['enableKb'] = 'true';
+  _support['ui']['styles'] = {
+    widgetColor: 'rgb(228, 44, 32)',
+    gradient: true,
+  };
+  _support['ui']['shoutboxFacesMode'] = 'default';
+  _support['ui']['shoutboxHeaderLogo'] = true;
+  _support['ui']['widget'] = {
+    displayOn: 'all',
+    fontSize: 'default',
+    allowBotProcessing: true,
+    slug: 'lifefuel-au-chat-slash-contact-form-shoutbox-a366f73f6e705b46',
+    label: {
+      text: 'Let us know if you have any questions! &#128522;',
+      mode: "notification",
+      delay: 3,
+      duration: 30,
+      primary: 'I have a question',
+      secondary: 'No, thanks',
+      sound: true,
+    },
+    position: 'bottom-right',
+    mobilePosition: 'bottom-right'
+  };
+  _support['apps'] = {
+    faq: {"enabled":true},
+    recentConversations: {},
+    orders: {},
+    shopper: {}
+  };
+    `;
+    document.body.appendChild(reamazeConfigScript);
+
+    // Cleanup scripts on unmount
+    return () => {
+      document.body.removeChild(reamazeLoaderScript);
+      document.body.removeChild(reamazeConfigScript);
+    };
+  }, []);
 
   return (
     <footer className="bg-accent-50 min-h-[140px] py-8 text-white">
@@ -83,16 +138,15 @@ export const Footer = () => {
             <div className="flex flex-col gap-4 mt-4">
               <h5> ABN 28 069 966 859 </h5>
               <p className="text-sm">
-                
                 <br />
-              <a
-              href="https://market.haus"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col items-start gap-1 text-sm"
-              >
-                Made with ❤️ by market.haus
-  </a>
+                <a
+                  href="https://market.haus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-start gap-1 text-sm"
+                >
+                  Made with ❤️ by market.haus
+                </a>
               </p>
             </div>
           </div>

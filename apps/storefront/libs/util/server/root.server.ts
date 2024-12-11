@@ -17,7 +17,12 @@ import { RemixLoaderResponse } from 'types/remix';
 // };
 
 const fetchHasProducts = async (request: Request) => {
-  return await fetchProducts(request, { limit: 2000, offset: 0 }).then((res) => res.count > 0);
+  return await fetchProducts(request, { limit: 1, offset: 0 }).then((res) => {
+    if (res.count > 5000) {
+      return true;
+    }
+    return false;
+  });
 };
 
 export const getRootLoader = async ({ request }: LoaderFunctionArgs) => {

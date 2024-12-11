@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { convertToFormData } from '@libs/util/forms/objectToFormData';
 import { useFetcher } from '@remix-run/react';
 import { Container } from '@app/components/common/container/Container';
@@ -9,7 +8,7 @@ import { useRegions } from '@app/hooks/useRegions';
 import { useRootLoaderData } from '@app/hooks/useRootLoaderData';
 import { useSiteDetails } from '@app/hooks/useSiteDetails';
 import clsx from 'clsx';
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import { LogoStoreName } from '@app/components/LogoStoreName/LogoStoreName';
 import { NewsletterSubscription } from '@app/components/newsletter/Newsletter';
 import { RegionActions } from '@app/routes/api.region';

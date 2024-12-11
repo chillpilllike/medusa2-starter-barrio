@@ -53,39 +53,39 @@ export const Footer = () => {
     const reamazeConfigScript = document.createElement('script');
     reamazeConfigScript.type = 'text/javascript';
     reamazeConfigScript.innerHTML = `
-      var _support = _support || { 'ui': {}, 'user': {} };
-      _support['account'] = 'espot';
-      _support['ui']['contactMode'] = 'mixed';
-      _support['ui']['enableKb'] = 'true';
-      _support['ui']['styles'] = {
-        widgetColor: 'rgba(16, 162, 197, 1)',
-        gradient: true,
-      };
-      _support['ui']['shoutboxFacesMode'] = 'default';
-      _support['ui']['shoutboxHeaderLogo'] = true;
-      _support['ui']['widget'] = {
-        displayOn: 'all',
-        fontSize: 'default',
-        allowBotProcessing: true,
-        slug: 'lifefuel-chat',
-        label: {
-          text: 'Let us know if you have any questions! &#128522;',
-          mode: "notification",
-          delay: 3,
-          duration: 30,
-          primary: 'I have a question',
-          secondary: 'No, thanks',
-          sound: true,
-        },
-        position: 'bottom-right',
-        mobilePosition: 'bottom-right'
-      };
-      _support['apps'] = {
-        faq: {"enabled":true},
-        recentConversations: {},
-        orders: {},
-        shopper: {}
-      };
+       var _support = _support || { 'ui': {}, 'user': {} };
+  _support['account'] = 'lifefuelau';
+  _support['ui']['contactMode'] = 'mixed';
+  _support['ui']['enableKb'] = 'true';
+  _support['ui']['styles'] = {
+    widgetColor: 'rgb(228, 44, 32)',
+    gradient: true,
+  };
+  _support['ui']['shoutboxFacesMode'] = 'default';
+  _support['ui']['shoutboxHeaderLogo'] = true;
+  _support['ui']['widget'] = {
+    displayOn: 'all',
+    fontSize: 'default',
+    allowBotProcessing: true,
+    slug: 'lifefuel-au-chat-slash-contact-form-shoutbox-a366f73f6e705b46',
+    label: {
+      text: 'Let us know if you have any questions! &#128522;',
+      mode: "notification",
+      delay: 3,
+      duration: 30,
+      primary: 'I have a question',
+      secondary: 'No, thanks',
+      sound: true,
+    },
+    position: 'bottom-right',
+    mobilePosition: 'bottom-right'
+  };
+  _support['apps'] = {
+    faq: {"enabled":true},
+    recentConversations: {},
+    orders: {},
+    shopper: {}
+  };
     `;
     document.body.appendChild(reamazeConfigScript);
 

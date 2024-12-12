@@ -6,20 +6,20 @@ import { MILLIS } from './cache-builder.server';
 
 export const fetchProducts = async (
   request: Request,
-  { currency_code, ...query }: HttpTypes.StoreProductParams = {},
+  { currency_code, limit = 5000, ...query }: HttpTypes.StoreProductParams = {}, // Add default limit
 ) => {
   const region = await getSelectedRegion(request.headers);
 
   return await cachified({
-    key: `products-${JSON.stringify(query)}`,
+    key: `products-${region?.id || 'default'}`,
     cache: sdkCache,
-    staleWhileRevalidate: MILLIS.ONE_HOUR,
-    ttl: MILLIS.TEN_SECONDS,
-    async getFreshValue() {
-      return await sdk.store.product.list({
+    ttl: MILLIS.ONE_HOUR,
+    staleWhileRevalidate: MILLIS.ONE_DAY,
+    getFreshValue: () =>
+      sdk.store.products.list({
         ...query,
-        region_id: region.id,
-      });
-    },
+        limit, // Include limit
+        region_id: region?.id,
+      }),
   });
 };

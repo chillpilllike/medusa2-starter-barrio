@@ -7,9 +7,14 @@ import { LoaderFunctionArgs } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  const { products, count, limit, offset } = await fetchProducts(request, {});
+  const limit = 5000; // Define the limit
+  const products = await fetchProducts(request, { limit });
 
-  return { products, count, limit, offset };
+  // Add a flag if more products exist
+  const totalCount = products?.meta?.count || 0; // Adjust if total count comes from meta
+  const showNotice = totalCount > limit;
+
+  return { products, showNotice, totalCount };
 };
 
 export type ProductsIndexRouteLoader = typeof loader;

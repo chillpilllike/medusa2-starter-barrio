@@ -17,45 +17,17 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
   return { products, showNotice, totalCount };
 };
 
-export type ProductsIndexRouteLoader = typeof loader;
-
-export default function ProductsIndexRoute() {
-  const data = useLoaderData<ProductsIndexRouteLoader>();
-
-  if (!data) return null;
-
-  const { products, count, limit, offset } = data;
-
-  const breadcrumbs = [
-    {
-      label: (
-        <span className="flex whitespace-nowrap">
-          <HomeIcon className="inline h-4 w-4" />
-          <span className="sr-only">Home</span>
-        </span>
-      ),
-      url: `/`,
-    },
-    {
-      label: 'All Products',
-    },
-  ];
+export default function Products() {
+  const { products, showNotice, totalCount } = useLoaderData();
 
   return (
-    <Container className="pb-16">
-      <div className="my-8 flex flex-wrap items-center justify-between gap-4">
-        <Breadcrumbs breadcrumbs={breadcrumbs} />
-      </div>
-
-      <div className="flex flex-col gap-4 sm:flex-row">
-        <div className="flex-1">
-          <ProductListWithPagination
-            products={products}
-            paginationConfig={{ count, offset, limit }}
-            context="products"
-          />
-        </div>
-      </div>
-    </Container>
+    <div>
+      {showNotice && (
+        <p className="text-sm text-gray-500">
+          Displaying 5,000 of {totalCount} products available in the store.
+        </p>
+      )}
+      <ProductListWithPagination products={products} />
+    </div>
   );
 }
